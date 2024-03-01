@@ -2,6 +2,7 @@ import utilidades
 import read_csv
 import charts
 
+
 def run():
   data =read_csv.read_csv('data.csv')
   data = list(filter(lambda item : item['Continent'] == 'South America', data))
@@ -23,7 +24,6 @@ def run():
 
 if __name__ == '__main__': # con esto ya podemos tener dualidad para poder ejecutar run desde app/mainpy como un script
   run()
-  
   
   
 # cualquier archivo en python se considera un modulo
